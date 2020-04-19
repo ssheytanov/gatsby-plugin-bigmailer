@@ -1,0 +1,46 @@
+{
+  "name": "gatsby-plugin-bigmailer",
+  "version": "1.0.0",
+  "description": "Plugin that simplifies the usage of the BigMailer API",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --out-dir ./ --source-maps",
+    "watch": "babel src --out-dir ./ --source-maps --watch",
+    "lint": "eslint --ext js ./ --cache",
+    "format": "prettier --write 'src/*.js'",
+    "test": "jest --color"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssheytanov/gatsby-plugin-bigmailer.git"
+  },
+  "keywords": [
+    "bigmailer"
+  ],
+  "author": "Simeon Sheytanov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ssheytanov/gatsby-plugin-bigmailer/issues"
+  },
+  "homepage": "https://github.com/ssheytanov/gatsby-plugin-bigmailer#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "jest": "^25.3.0",
+    "prettier": "^2.0.4"
+  },
+  "peerDependencies": {
+    "gatsby": ">2.0.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.9.2"
+  },
+  "jest": {
+    "collectCoverage": true
+  }
+}
